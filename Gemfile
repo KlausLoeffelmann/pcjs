@@ -14,5 +14,7 @@ gem 'webrick', '~> 1.7'
 # Retry middleware for Faraday
 gem 'faraday-retry', '~> 1.0'
 
-# Windows-specific gem for Jekyll file watching
-gem 'wdm', '>= 0.1.0', if: Gem.win_platform?
+# Conditionally include 'wdm' gem only on Windows
+if Gem.win_platform?
+  gem 'wdm', '>= 0.1.0'
+end
