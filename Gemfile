@@ -11,9 +11,6 @@ gem 'jekyll-include-cache', group: :jekyll_plugins
 # Required for Jekyll server on Ruby 3.0+
 gem 'webrick', '~> 1.7'
 
-# Retry middleware for Faraday
-gem 'faraday-retry', '~> 1.0'
-
 # Conditionally include 'wdm' gem only on Windows
 if Gem.win_platform?
   gem 'wdm', '>= 0.1.0'
