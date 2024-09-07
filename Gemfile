@@ -1,8 +1,18 @@
 source 'https://rubygems.org'
-gem "github-pages"
-gem 'jekyll-sitemap'
-gem 'jekyll-redirect-from'
-gem 'jekyll-include-cache'
-gem "webrick", "~> 1.7"
-gem "faraday-retry", "~> 1.0"
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+# Use the GitHub Pages gem to manage dependencies
+gem 'github-pages', group: :jekyll_plugins
+
+# Additional Jekyll plugins that are compatible with GitHub Pages
+gem 'jekyll-sitemap', group: :jekyll_plugins
+gem 'jekyll-redirect-from', group: :jekyll_plugins
+gem 'jekyll-include-cache', group: :jekyll_plugins
+
+# Required for Jekyll server on Ruby 3.0+
+gem 'webrick', '~> 1.7'
+
+# Retry middleware for Faraday
+gem 'faraday-retry', '~> 1.0'
+
+# Windows-specific gem for Jekyll file watching
+gem 'wdm', '>= 0.1.0', if: Gem.win_platform?
