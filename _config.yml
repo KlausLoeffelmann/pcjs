@@ -17,7 +17,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-init.sh
-  # Removed Gemfile.lock exclusion for consistent dependency management
+  - Gemfile.lock
   - gulpfile.js
   - "*.log"
   - "**/tmp"
@@ -26,12 +26,12 @@ exclude:
   - /package*.json
   - /.history
   - /.vscode
-  # Check if the following exclusions are necessary
-  # - /disks
-  # - /node_modules
-  # - /software/pcx86/sys/dos/microsoft/1.25/src
-  # - /software/pcx86/sys/dos/microsoft/2.11/src
-  # - /tools/pc/disks
+  - /disks
+  - /node_modules
+  - /software/pcx86/sys/dos/microsoft/1.25/src
+  - /software/pcx86/sys/dos/microsoft/2.11/src
+  - /tools/pc/disks
+  - vendor   # Exclude the vendor directory where gems are installed
 
 github:
   owner_name: "jeffpar"
