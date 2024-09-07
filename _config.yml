@@ -17,8 +17,10 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-init.sh
+  - Gemfile
   - Gemfile.lock
   - gulpfile.js
+  - README.md
   - "*.log"
   - "**/tmp"
   - "**/archive"
@@ -31,7 +33,6 @@ exclude:
   - /software/pcx86/sys/dos/microsoft/1.25/src
   - /software/pcx86/sys/dos/microsoft/2.11/src
   - /tools/pc/disks
-  - vendor   # Exclude the vendor directory where gems are installed
 
 github:
   owner_name: "jeffpar"
