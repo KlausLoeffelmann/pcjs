@@ -33,6 +33,7 @@ exclude:
   - /software/pcx86/sys/dos/microsoft/1.25/src
   - /software/pcx86/sys/dos/microsoft/2.11/src
   - /tools/pc/disks
+  - vendor/bundle/ruby/3.1.0/gems/jekyll-3.10.0/lib/site_template/_posts
 
 github:
   owner_name: "jeffpar"
